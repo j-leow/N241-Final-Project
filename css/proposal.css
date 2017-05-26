@@ -1,0 +1,32 @@
+/* portfolio.css */
+/* Author: Julianne Leow */
+/* Create Date: 05 April 2017 */
+
+body
+{
+    background-color: #90afc5;
+}
+
+h1
+{
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 26px;
+
+    color: #763626;
+}
+
+h3
+{
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 22px;
+
+    color: #336b87;
+}
+
+p, blockquote
+{
+    font-family: 'Schoolbell', cursive;
+    font-size: 18px;
+
+    color: #2a3132;
+}

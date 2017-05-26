@@ -1,0 +1,72 @@
+<!--CSCI-N241 FINAL PROJECT
+    Jules Leow
+    04/20/17
+    Creating a web portfolio for me as a CS student with web development background. This site will feature a few different pages: About, Experiences, Gallery of works, and a Contact page.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Contact Me</title>
+        <link rel = "stylesheet"
+            type = "text/css"
+            href = "css/finalproj.css"/>
+        <meta name="description"
+            content = "My final project page which includes all techniques learned this semester. This page lists my experience - taken from my resume."/>
+        <script src="https://use.fontawesome.com/af290a9860.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="pagewrapper">
+            <header id="header">
+                <a id="top" href="finalProj_Home.html"><img src="images/Logo_BW.png" alt="logo"></a>
+                <h1>CONTACT ME</h1>
+                <nav class="navlinks">
+                    <ul>
+                        <li><a href="finalProj_Home.html">Home</a></li>
+                        <li><a href="finalProj_Art.html">My Work</a></li>
+                        <li><a href="finalProj_Exp.html">My Experience</a></li>
+                        <li><a href="finalProj_Story.html">My Story</a></li>
+                        <li><a href="finalProj_Contact.html">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+        <div class="content">
+            <section class=myinfo>
+                <p>Please don't hesitate to contact me for more information! Here are some ways I can be reached:</p>
+                <ol>
+                      <li>Email me at: <a href="mailto:jleow@iupui.edu">jleow@iupui.edu</a></li>
+                      <li>LinkedIn: <a href="https://www.linkedin.com/in/julianne-leow-iupui/">Jules Leow on LinkedIn</a></li>
+                </ol>
+            </section>
+
+            <section class="form">
+                <h2>Alternatively, send me a Message here:</h2>
+                  <form action="mailto:jleow@iupui.edu" method="POST" enctype="text/plain">
+                        <p><label>First name:</label><br>
+                        <input type="text" name="firstname" placeholder="First name" required>
+
+                        <br><br><label>Last name</label><br>
+                        <input type="text" name="lastname" placeholder="Last name" required>
+
+                        <br><br><label>Email</label><br>
+                        <input name="email" type="email" placeholder="Type Here">
+
+                        <br><br><label>Your message</label><br>
+                        <textarea name="message" rows="10" cols="50" placeholder="Type here."></textarea></p>
+                        <input type="submit" class="submit" value="Submit">
+                        <input type="reset" class="reset" value="Reset">
+                  </form>
+            </section>
+        </div>
+
+        <footer id="footer">
+            <a href="#top"> Back to Top </a>
+        </footer>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,170 @@
+<!--CSCI-N241 FINAL PROJECT
+    Jules Leow
+    04/20/17
+    Creating a web portfolio for me as a CS student with web development background. This site will feature a few different pages: About, Experiences, Gallery of works, and a Contact page.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My Work</title>
+        <link rel = "stylesheet"
+            type = "text/css"
+            href = "css/finalproj.css"/>
+        <meta name="description"
+            content = "My final project page which includes all techniques learned this semester."/>
+        <script src="https://use.fontawesome.com/af290a9860.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="pagewrapper">
+            <header id="header">
+                <a id="top" href="finalProj_Home.html"><img src="images/Logo_BW.png" alt="logo"></a>
+                <h1>MY WORK</h1>
+                <nav class="navlinks">
+                    <ul>
+                        <li><a href="finalProj_Home.html">Home</a></li>
+                        <li><a href="finalProj_Art.html">My Work</a></li>
+                        <li><a href="finalProj_Exp.html">My Experience</a></li>
+                        <li><a href="finalProj_Story.html">My Story</a></li>
+                        <li><a href="finalProj_Contact.html">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+        <div class="content">
+            <section class="art">
+                <h2>My Art</h2>
+                <p>A collection of my work as an artist who dabbles in the medium of ink, calligraphy, and lettering.</p>
+            </section>
+
+            <!--This section will have all the images linked.-->
+            <section class="slideshowContainer">
+                <div class="mySlides">
+                    <div class="numbertag">1/7</div>
+                    <img src="images/eiteljorg.jpg" alt="eiteljorg" style="width:100%">
+                    <div class="caption">Eiteljorg Museum, Indianapolis</div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertag">2/7</div>
+                    <img src="images/IMA.jpg" alt="ima" style="width:100%">
+                    <div class="caption">Indianapolis Museum of Art</div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertag">3/7</div>
+                    <img src="images/indyCanal.jpg" alt="canal" style="width:100%">
+                    <div class="caption">Indianapolis, From Indy Canal</div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertag">4/7</div>
+                    <img src="images/indyWhiteRiver.jpg" alt="white river" style="width:100%">
+                    <div class="caption">Indianapolis, From White River</div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertag">5/7</div>
+                    <img src="images/ISM.jpg" alt="ism" style="width:100%">
+                    <div class="caption">Indiana State Museum, Indianapolis</div>
+                </div>
+            </section>
+
+            <section class="slideshowContainer">
+                <div class="mySlides">
+                    <div class="numbertag">6/7</div>
+                    <img src="images/kualaLumpur.jpg" alt="kl" style="width:100%">
+                    <div class="caption">Kuala Lumpur, Malaysia</div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertag">7/7</div>
+                    <img src="images/penangBridge.jpg" alt="penang bridge" style="width:100%">
+                    <div class="caption">Penang Bridge, Malaysia</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </section>
+
+        <br>
+
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+              <span class="dot" onclick="currentSlide(6)"></span>
+              <span class="dot" onclick="currentSlide(7)"></span>
+            </div>
+
+            <br>
+            <section class="dev">
+                <h2>Web Development Projects</h2>
+                <p>Here is a collection of of all sites that I have worked on for a class (<q>Fundamentals of Web Programming</q>):</p>
+                <a href="http://cs.iupui.edu/~jleow/n241/" target="_blank"><img src="images/index.jpg" alt="index"></a>
+                <br>
+                <br>
+                <p>Here are some highlights of my projects from the list above.</p>
+                <p>Personal site for a pet:</p>
+                <a href="http://cs.iupui.edu/~jleow/n241/CSSCollege.html" target="_blank"><img src="images/padfoot.jpg" alt="padfoot"></a>
+                <br>
+                <p>A Zen-Garden-like site to showcase CSS changes:</p>
+                <a href="http://cs.iupui.edu/~jleow/n241/zenGarden.html" target="_blank"><img src="images/csspage.jpg" alt="css page"></a>
+                <br>
+                <p>A page that demonstrates the usage of forms:</p>
+                <a href="http://cs.iupui.edu/~jleow/n241/form.html" target="_blank"><img src="images/form.jpg" alt="form"></a>
+                <br>
+                <p>A page that demonstrates the usage of tables with creative CSS:</p>
+                <a href="http://cs.iupui.edu/~jleow/n241/table.html" target="_blank"><img src="images/table.jpg" alt="table"></a>
+
+            </section>
+
+            <section class="git">
+                  <h2>GitHub</h2>
+                  <p>Also, check out my GitHub repositories here:</p>
+                  <a href="https://github.iu.edu/jleow" target="_blank">Jules Leow at GitHub</a>
+                  <br>
+            </section>
+        </div>
+
+        <!--This section will control the behavior of the slideshow-->
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            }
+        </script>
+        <footer id="footer">
+            <a href="#top"> Back to Top </a>
+        </footer>
+    </div>
+    </body>
+</html>
